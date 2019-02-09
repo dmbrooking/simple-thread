@@ -1,6 +1,7 @@
 require_relative '../project_reimbursement_calculator'
 require 'date'
 
+# rubocop:disable Metrics/BlockLength
 RSpec.describe ProjectReimbursementCalculator do
   it 'runs set #1 as expected' do
     calc = ProjectReimbursementCalculator.new(build(:set, :set1))
@@ -90,3 +91,4 @@ RSpec.describe ProjectReimbursementCalculator do
     end
   end
 end
+# rubocop:enable Metrics/BlockLength
