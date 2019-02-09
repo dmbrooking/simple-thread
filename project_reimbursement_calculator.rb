@@ -29,6 +29,8 @@ class ProjectReimbursementCalculator
   private
 
   def total_range
+    return [] if projects.empty?
+
     (projects[0].start_date..projects[-1].end_date)
   end
 

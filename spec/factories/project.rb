@@ -3,6 +3,7 @@ FactoryBot.define do
   factory :project do
     start_date { Date.today }
     end_date { Date.today + 1 }
+    city { build(:low_cost_city) }
 
     trait :low_cost do
       city { build(:low_cost_city) }
