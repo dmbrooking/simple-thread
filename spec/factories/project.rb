@@ -1,3 +1,4 @@
+# rubocop:disable Metrics/BlockLength
 FactoryBot.define do
   factory :project do
     start_date { Date.today }
@@ -69,3 +70,4 @@ FactoryBot.define do
     initialize_with { new(city, start_date, end_date) }
   end
 end
+# rubocop:enable Metrics/BlockLength

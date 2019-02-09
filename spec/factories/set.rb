@@ -1,3 +1,4 @@
+# rubocop:disable Metrics/BlockLength
 FactoryBot.define do
   factory :set, class: Array do
     trait :set1 do
@@ -42,5 +43,4 @@ FactoryBot.define do
     initialize_with { attributes[:projects] }
   end
 end
-
-
+# rubocop:enable Metrics/BlockLength
