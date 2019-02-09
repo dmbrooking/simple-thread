@@ -1,7 +1,15 @@
 require 'forwardable'
 
-class Project < Struct.new(:city, :start_date, :end_date)
+class Project
   extend Forwardable
+
+  attr_accessor :city, :start_date, :end_date
+
+  def initialize(city, start_date, end_date)
+    @city = city
+    @start_date = start_date
+    @end_date = end_date
+  end
 
   def range
     (start_date..end_date)

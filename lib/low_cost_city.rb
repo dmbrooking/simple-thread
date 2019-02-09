@@ -1,7 +1,11 @@
 require_relative './city'
 
 class LowCostCity < City
-  def initialize
-    super(45, 75)
+  def travel_day_cost
+    45
+  end
+
+  def work_day_cost
+    75
   end
 end

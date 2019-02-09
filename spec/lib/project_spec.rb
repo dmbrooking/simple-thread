@@ -3,6 +3,7 @@ require_relative '../../lib/low_cost_city'
 require 'date'
 
 RSpec.describe Project do
+  subject { Project.new(LowCostCity.new, Date.today, Date.today + 4) }
   it { is_expected.to respond_to(:city) }
   it { is_expected.to respond_to(:start_date) }
   it { is_expected.to respond_to(:end_date) }
